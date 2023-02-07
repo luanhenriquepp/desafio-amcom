@@ -64,7 +64,7 @@ mat-stepper .observation .disclaimer {
 .actions {
   display: flex;
   justify-content: space-between;
-  max-width: 380px;
+  max-width: 440px;
   margin: 12px;
 }
 
