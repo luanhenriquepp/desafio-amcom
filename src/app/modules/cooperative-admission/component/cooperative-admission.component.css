@@ -19,6 +19,7 @@ mat-stepper .cards {
 mat-stepper .cards .mat-card-layout {
   width: 320px;
   min-height: 220px;
+  border-radius: 8px;
 }
 mat-stepper .cards .mat-card-layout:nth-child(n+2) {
   margin-left: 24px;
@@ -63,7 +64,7 @@ mat-stepper .observation .disclaimer {
 .actions {
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
+  max-width: 380px;
   margin: 12px;
 }
 
