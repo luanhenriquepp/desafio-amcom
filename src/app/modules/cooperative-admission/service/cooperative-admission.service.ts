@@ -10,18 +10,18 @@ export class CooperativeAdmissionService {
 
   data: ICooperative[] = [
     {
-      name: 'Luan',
+      name: 'Jussiscleide Da Silva',
       cpf: '04316712144',
       cpfIsRegularized: true,
       accounts: [
         {
-          accountNumber: '1234',
+          accountNumber: '123132-x',
           title: 'Conta aplicação',
           subTitle: 'Cooperativa Viacredi'
         },
         {
-          accountNumber: '12345',
-          title: 'Conta aplicação',
+          accountNumber: '89745-2',
+          title: 'Conta corrente',
           subTitle: 'Cooperativa Viacredi'
         }
       ]
