@@ -4,28 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon'
-import { MatListModule } from "@angular/material/list";
-import { MatFormFieldModule } from "@angular/material/form-field";
-import {MatBadgeModule} from "@angular/material/badge";
+import {SharedModule} from "../shared/shared.module";
+import {CooperativeAdmissionComponent} from "./modules/cooperative-admission/component/cooperative-admission.component";
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CooperativeAdmissionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatFormFieldModule,
-    MatBadgeModule
+    SharedModule
+  ],
+  exports: [
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

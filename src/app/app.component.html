@@ -1,40 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" opened="true">
-    <mat-nav-list>
-        <img class="icon" [src]="iconUrl">
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link">
-        <mat-icon>search</mat-icon>
-      </a>
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link">
-        <mat-icon>star_border</mat-icon>
-      </a>
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link">
-        <mat-icon>speaker_notes</mat-icon>
-      </a>
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link">
-        <mat-icon>list_alt</mat-icon>
-      </a>
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link">
-        <mat-icon>account_balance</mat-icon>
-      </a>
-
-    </mat-nav-list>
+    <app-menu [iconUrl]="iconUrl"></app-menu>
   </mat-sidenav>
-  <mat-toolbar>
-   <div class="page-infos">
-      <span class="name">
-        NOVA ADMISSÃO COOPERADO
-    </span>
-     <span class="description">
-        Cadastro / Admissão do cooperado / Nova admissão do cooperado
-     </span>
-   </div>
-    <div class="user-infos">
-      <mat-icon matBadge="7" matBadgeColor="warn" matBadgeSize="small">notifications_none</mat-icon>
-      <span class="company-name">VIACREDI</span>
-      <img class="user-badge" [src]="iconUrl">
-    </div>
-  </mat-toolbar>
-  <div class="content">
-  </div>
+    <app-header [iconUrl]="iconUrl"></app-header>
+  <div class="content"><router-outlet></router-outlet></div>
 </mat-sidenav-container>

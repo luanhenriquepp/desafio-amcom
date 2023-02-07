@@ -1,0 +1,36 @@
+mat-toolbar
+  justify-content: space-between
+  background: var(--white-color)
+  color: var(--black-color)
+  margin: 10px 0 0 0
+  .page-infos
+    display: flex
+    flex-direction: column
+    margin: 10px 10px
+    .name
+      font-size: 16px
+    .description
+      font-size: 12px
+      color: #dddddd
+.user-infos
+  cursor: pointer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .mat-icon
+    color: var(--primary-color)
+  .company-name
+    border-radius: 30px
+    margin: 0 10px
+    border: 1px solid var(--primary-color)
+    font-size: 12px
+    text-align: center
+    width: 90px
+    font-weight: 700
+    &:hover
+      background: var(--primary-color)
+      color: var(--white-color)
+  .user-badge
+    max-width: 40px
+    border-radius: 50%
+    border: 1px solid var(--primary-color)

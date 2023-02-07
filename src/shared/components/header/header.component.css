@@ -1,0 +1,48 @@
+mat-toolbar {
+  justify-content: space-between;
+  background: var(--white-color);
+  color: var(--black-color);
+  margin: 10px 0 0 0;
+}
+mat-toolbar .page-infos {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+mat-toolbar .page-infos .name {
+  font-size: 16px;
+}
+mat-toolbar .page-infos .description {
+  font-size: 12px;
+  color: #dddddd;
+}
+
+.user-infos {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-infos .mat-icon {
+  color: var(--primary-color);
+}
+.user-infos .company-name {
+  border-radius: 30px;
+  margin: 0 10px;
+  border: 1px solid var(--primary-color);
+  font-size: 12px;
+  text-align: center;
+  width: 90px;
+  font-weight: 700;
+}
+.user-infos .company-name:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+.user-infos .user-badge {
+  max-width: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+
+/*# sourceMappingURL=header.component.css.map */

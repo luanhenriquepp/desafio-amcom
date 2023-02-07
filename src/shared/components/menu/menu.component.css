@@ -1,0 +1,13 @@
+mat-nav-list {
+  text-align: center;
+}
+mat-nav-list .icon {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+mat-nav-list .mat-icon {
+  color: var(--white-color);
+}
+
+/*# sourceMappingURL=menu.component.css.map */
