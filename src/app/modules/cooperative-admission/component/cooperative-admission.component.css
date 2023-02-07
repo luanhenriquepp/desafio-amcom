@@ -1,3 +1,94 @@
+mat-stepper {
+  background: rgb(231, 236, 242);
+  height: 84vh;
+}
+mat-stepper .input-container {
+  display: flex;
+  flex-direction: column;
+}
+mat-stepper .input-container div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+mat-stepper .cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+mat-stepper .cards .mat-card-layout {
+  width: 320px;
+  min-height: 220px;
+}
+mat-stepper .cards .mat-card-layout:nth-child(n+2) {
+  margin-left: 24px;
+}
+mat-stepper .cards .mat-card-layout .card-content .information {
+  padding-top: 24px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+mat-stepper .cards .mat-card-layout .card-content .information .title {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 32px;
+}
+mat-stepper .cards .mat-card-layout .card-content .information .title span:first-child {
+  font-size: 14px;
+  color: gray;
+  font-weight: 200;
+}
+mat-stepper .cards .mat-card-layout .card-content .information .action {
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+mat-stepper .observation {
+  display: flex;
+  flex-direction: column;
+}
+mat-stepper .observation .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+mat-stepper .observation .disclaimer {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
 
+.actions {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 12px;
+}
+
+::ng-deep .mat-horizontal-stepper-header-container {
+  margin: 2px 20% 5%;
+}
+::ng-deep .mat-step-header .mat-step-icon-selected, ::ng-deep .mat-step-header .mat-step-icon-state-done, ::ng-deep .mat-step-header .mat-step-icon-state-edit {
+  background: var(--primary-color);
+}
+::ng-deep .mat-step-header .mat-step-icon {
+  color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+::ng-deep .mat-step-icon .mat-step-label {
+  display: none;
+}
+::ng-deep .mat-mdc-text-field-wrapper {
+  background: var(--white-color);
+  max-height: 50px;
+}
+::ng-deep .mat-form-field-label-wrapper {
+  transform: translateY(-20px) !important;
+}
+::ng-deep .mat-form-field-label {
+  transform: translateY(-20px) !important;
+}
 
 /*# sourceMappingURL=cooperative-admission.component.css.map */

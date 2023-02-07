@@ -1,7 +1,14 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav mode="side" opened="true">
-    <app-menu [iconUrl]="iconUrl"></app-menu>
-  </mat-sidenav>
-    <app-header [iconUrl]="iconUrl"></app-header>
-  <div class="content"><router-outlet></router-outlet></div>
-</mat-sidenav-container>
+<section class="app">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened="true">
+      <app-menu [iconUrl]="iconUrl"></app-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="content">
+        <app-header [iconUrl]="iconUrl"></app-header>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</section>

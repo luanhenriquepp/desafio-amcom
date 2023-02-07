@@ -6,6 +6,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatListModule} from "@angular/material/list";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatBadgeModule} from "@angular/material/badge";
+import {MatStepperModule} from "@angular/material/stepper";
 
 const materialModules = [
   MatSidenavModule,
@@ -13,7 +14,8 @@ const materialModules = [
   MatIconModule,
   MatListModule,
   MatFormFieldModule,
-  MatBadgeModule
+  MatBadgeModule,
+  MatStepperModule
 ]
 @NgModule({
   declarations: [],

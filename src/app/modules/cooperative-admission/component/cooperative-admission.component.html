@@ -1,1 +1,80 @@
-<p>cooperative-admission works!</p>
+<mat-stepper #stepper labelPosition="bottom">
+  <mat-step >
+      <ng-template matStepLabel icon="false">Inicio</ng-template>
+      <div class="observation">
+        <span class="title">
+          Informe o CPF do futuro cooperado(a)
+        </span>
+        <span class="disclaimer">
+          Se necessário, você poderá duplicar uma conta existente ou pausar e retornar esse cadastro futuramente. <br>
+          Digite apenas os números(sem pontos ou traços).
+        </span>
+      </div>
+
+      <div class="input-container">
+        <mat-label>CPF</mat-label>
+        <div>
+          <mat-form-field appearance="outline" [style.min-width.px]="350" [style.max-height.px]="50">
+            <input matInput placeholder="000.000.000-00" [formControl]="cpfCtrl" mask="000.000.000-00">
+          </mat-form-field>
+          <app-button (callAction)="searchCooperative()" [class]="'button-primary'" [title]="'Consultar por CPF'"></app-button>
+        </div>
+        <div [style.padding-top.px]="12">
+          <mat-error *ngIf="searchSubmit && !findResult"> A busca não retornou nenhum registro</mat-error>
+        </div>
+      </div>
+
+    <div class="cards" *ngIf="cooperative && findResult">
+      <mat-card class="mat-card-layout">
+        <mat-card-header>
+          <mat-card-title>Situação cadastral do CPF</mat-card-title>
+          <mat-card-subtitle>Consulta na Receita Federal</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="card-content">
+          <div class="information">
+            <mat-icon>home</mat-icon>
+            <div class="title">
+                <span>Nome</span>
+                <span>{{cooperative.name}}</span>
+              </div>
+          </div>
+          <div class="information">
+            <mat-icon  [ngStyle]="{'color': cooperative.cpfIsRegularized ? 'green' : 'red'}">verified_user</mat-icon>
+            <div class="title">
+              <span>Situação do CPF</span>
+              <span>{{cooperative.cpfIsRegularized ? 'Regularizado' : 'Não regularizado'}}</span>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <ng-container *ngFor="let account of cooperative.accounts">
+        <mat-card class="mat-card-layout">
+          <mat-card-header>
+            <mat-card-title>{{account.title}}</mat-card-title>
+            <mat-card-subtitle>{{account.subTitle}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content class="card-content">
+            <div class="information">
+              <mat-icon>credit_card</mat-icon>
+              <div class="title">
+                <span>Número da conta</span>
+                <span>{{account.accountNumber}}</span>
+              </div>
+            </div>
+            <div class="information">
+              <span class="action"> Duplicar Conta</span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+    </div>
+  </mat-step>
+  <mat-step><ng-template matStepLabel icon="false">Documentos</ng-template></mat-step>
+  <mat-step><ng-template matStepLabel icon="false">Dados Cadastrais</ng-template> </mat-step>
+  <mat-step><ng-template matStepLabel icon="false">Documentos</ng-template> </mat-step>
+</mat-stepper>
+<div class="actions">
+  <app-button [class]="'button-primary'" [title]="'Iniciar nova admissão'" *ngIf="cooperative && findResult"></app-button>
+  <app-button [class]="'button-inverted'" [title]="'Dicas Para admissão'"></app-button>
+</div>

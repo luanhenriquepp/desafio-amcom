@@ -8,10 +8,16 @@
   background: var(--primary-color);
   height: 100%;
 }
-.sidenav-container .content {
-  flex-grow: 1;
-  background: rgb(231, 236, 242);
+.sidenav-container mat-sidenav-content {
   height: 100%;
+}
+
+.app {
+  height: 100vh;
+}
+
+mat-sidenav-container {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=app.component.css.map */

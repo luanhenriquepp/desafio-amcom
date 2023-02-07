@@ -1,0 +1,17 @@
+.button-primary {
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--white-color) !important;
+}
+.button-primary:hover {
+  opacity: 0.8;
+}
+
+.button-inverted {
+  height: 50px;
+  background-color: var(--white-color);
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+}
+
+/*# sourceMappingURL=button.component.css.map */
