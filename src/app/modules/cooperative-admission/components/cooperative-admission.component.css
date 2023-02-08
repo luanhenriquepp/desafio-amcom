@@ -71,12 +71,17 @@ mat-stepper .observation .disclaimer {
 ::ng-deep .mat-horizontal-stepper-header-container {
   margin: 2px 25% 5%;
 }
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
 ::ng-deep .mat-step-header .mat-step-icon-selected, ::ng-deep .mat-step-header .mat-step-icon-state-done, ::ng-deep .mat-step-header .mat-step-icon-state-edit {
   background: var(--primary-color);
+  color: var(--primary-color);
 }
 ::ng-deep .mat-step-header .mat-step-icon {
-  color: var(--primary-color);
-  background-color: var(--primary-color);
+  color: gray;
+  background-color: gray;
 }
 ::ng-deep .mat-step-icon .mat-step-label {
   display: none;

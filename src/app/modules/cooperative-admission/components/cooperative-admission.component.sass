@@ -60,11 +60,15 @@ mat-stepper
 ::ng-deep
   .mat-horizontal-stepper-header-container
     margin: 2px 25% 5%
+  .mat-step-header .mat-step-icon-selected
+    background: var(--primary-color) !important
+    color: var(--primary-color) !important
   .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit
     background: var(--primary-color)
-  .mat-step-header .mat-step-icon
     color: var(--primary-color)
-    background-color: var(--primary-color)
+  .mat-step-header .mat-step-icon
+    color: gray
+    background-color: gray
   .mat-step-icon .mat-step-label
     display: none
   .mat-mdc-text-field-wrapper
