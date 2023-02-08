@@ -1,5 +1,5 @@
 export  interface IRouterData {
   title: string,
-  deepPathInfo: string,
+  event: string,
   routePath: string
 }

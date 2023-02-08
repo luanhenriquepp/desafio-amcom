@@ -1,9 +1,8 @@
 <mat-toolbar>
   <div class="page-infos">
-      <span class="name">
-    </span>
+      <span class="name">{{(this.$pageInfoData | async)?.title}}</span>
     <span class="description">
-
+      {{(this.$pageInfoData | async)?.event}}
      </span>
   </div>
   <div class="user-infos">

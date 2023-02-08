@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormControl, Validators} from "@angular/forms";
+import {FormBuilder, FormControl} from "@angular/forms";
 import {ActivatedRoute, Data} from "@angular/router";
-import {IRouterData} from "../../../../shared/interfaces/router-data-interface";
 import {CooperativeAdmissionService} from "../service/cooperative-admission.service";
 import {ICooperative} from "../interface/cooperative.interface";
+import {PageInfoDataService} from "../../../shared/services/page-info-data.service";
+import {IRouterData} from "../../../shared/interfaces/router-data-interface";
 
 @Component({
   selector: 'app-cooperative-admission',
@@ -19,8 +20,9 @@ export class CooperativeAdmissionComponent {
   componentInfos: Data = {} as IRouterData;
   constructor(private _formBuilder: FormBuilder,
               private _service: CooperativeAdmissionService,
+              private _pageInfoService: PageInfoDataService,
               protected route: ActivatedRoute) {
-    this.componentInfos = this.route.snapshot.data;
+    this._pageInfoService.setPageInfo(this.route.snapshot.data as IRouterData)
   }
 
 

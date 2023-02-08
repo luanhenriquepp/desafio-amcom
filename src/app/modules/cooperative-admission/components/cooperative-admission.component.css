@@ -17,7 +17,7 @@ mat-stepper .cards {
   flex-direction: row;
 }
 mat-stepper .cards .mat-card-layout {
-  width: 320px;
+  width: 360px;
   min-height: 220px;
   border-radius: 8px;
 }
@@ -69,7 +69,7 @@ mat-stepper .observation .disclaimer {
 }
 
 ::ng-deep .mat-horizontal-stepper-header-container {
-  margin: 2px 20% 5%;
+  margin: 2px 25% 5%;
 }
 ::ng-deep .mat-step-header .mat-step-icon-selected, ::ng-deep .mat-step-header .mat-step-icon-state-done, ::ng-deep .mat-step-header .mat-step-icon-state-edit {
   background: var(--primary-color);
