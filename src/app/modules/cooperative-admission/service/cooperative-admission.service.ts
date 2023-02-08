@@ -27,17 +27,17 @@ export class CooperativeAdmissionService {
       ]
     },
     {
-      name: 'Beltrano de Tal',
+      name: 'Romualdo da Silva',
       cpf: '23165478311',
       cpfIsRegularized: true,
       accounts: [
         {
-          accountNumber: '654465',
+          accountNumber: '654465-0',
           title: 'Conta aplicação',
           subTitle: 'Cooperativa Viacredi'
         },
         {
-          accountNumber: '885432',
+          accountNumber: '885432-x',
           title: 'Conta aplicação',
           subTitle: 'Cooperativa Viacredi'
         }

@@ -2,7 +2,7 @@ mat-toolbar {
   justify-content: space-between;
   background: var(--white-color);
   color: var(--black-color);
-  margin: 10px 0 0 0;
+  margin: 12px 0 0 0;
 }
 mat-toolbar .page-infos {
   display: flex;
@@ -10,10 +10,10 @@ mat-toolbar .page-infos {
   margin: 10px 10px;
 }
 mat-toolbar .page-infos .name {
-  font-size: 16px;
+  font-size: 24px;
 }
 mat-toolbar .page-infos .description {
-  font-size: 12px;
+  font-size: 16px;
   color: #dddddd;
 }
 
@@ -27,8 +27,8 @@ mat-toolbar .page-infos .description {
   color: var(--primary-color);
 }
 .user-infos .company-name {
-  border-radius: 30px;
-  margin: 0 10px;
+  border-radius: 32px;
+  margin: 0 12px;
   border: 1px solid var(--primary-color);
   font-size: 12px;
   text-align: center;
@@ -45,4 +45,4 @@ mat-toolbar .page-infos .description {
   border: 1px solid var(--primary-color);
 }
 
-/*# sourceMappingURL=header.components.css.map */
+/*# sourceMappingURL=header.component.css.map */
