@@ -29,7 +29,7 @@ export class CooperativeAdmissionService {
     {
       name: 'Romualdo da Silva',
       cpf: '23165478311',
-      cpfIsRegularized: true,
+      cpfIsRegularized: false,
       accounts: [
         {
           accountNumber: '654465-0',
