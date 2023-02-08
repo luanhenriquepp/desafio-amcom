@@ -35,11 +35,6 @@ export class CooperativeAdmissionService {
           accountNumber: '654465-0',
           title: 'Conta aplicação',
           subTitle: 'Cooperativa Viacredi'
-        },
-        {
-          accountNumber: '885432-x',
-          title: 'Conta aplicação',
-          subTitle: 'Cooperativa Viacredi'
         }
       ]
     }
