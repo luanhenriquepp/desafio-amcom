@@ -17,8 +17,9 @@ mat-stepper .cards {
   flex-direction: row;
 }
 mat-stepper .cards .mat-card-layout {
-  width: 320px;
+  width: 360px;
   min-height: 220px;
+  border-radius: 8px;
 }
 mat-stepper .cards .mat-card-layout:nth-child(n+2) {
   margin-left: 24px;
@@ -63,19 +64,24 @@ mat-stepper .observation .disclaimer {
 .actions {
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
+  max-width: 440px;
   margin: 12px;
 }
 
 ::ng-deep .mat-horizontal-stepper-header-container {
-  margin: 2px 20% 5%;
+  margin: 2px 25% 5%;
+}
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 ::ng-deep .mat-step-header .mat-step-icon-selected, ::ng-deep .mat-step-header .mat-step-icon-state-done, ::ng-deep .mat-step-header .mat-step-icon-state-edit {
   background: var(--primary-color);
+  color: var(--primary-color);
 }
 ::ng-deep .mat-step-header .mat-step-icon {
-  color: var(--primary-color);
-  background-color: var(--primary-color);
+  color: gray;
+  background-color: gray;
 }
 ::ng-deep .mat-step-icon .mat-step-label {
   display: none;
@@ -89,6 +95,11 @@ mat-stepper .observation .disclaimer {
 }
 ::ng-deep .mat-form-field-label {
   transform: translateY(-20px) !important;
+}
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+  border-color: var(--primary-color) !important;
 }
 
 /*# sourceMappingURL=cooperative-admission.component.css.map */

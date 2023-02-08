@@ -10,34 +10,29 @@ export class CooperativeAdmissionService {
 
   data: ICooperative[] = [
     {
-      name: 'Luan',
+      name: 'Jussiscleide Da Silva',
       cpf: '04316712144',
       cpfIsRegularized: true,
       accounts: [
         {
-          accountNumber: '1234',
+          accountNumber: '123132-x',
           title: 'Conta aplicação',
           subTitle: 'Cooperativa Viacredi'
         },
         {
-          accountNumber: '12345',
-          title: 'Conta aplicação',
+          accountNumber: '89745-2',
+          title: 'Conta corrente',
           subTitle: 'Cooperativa Viacredi'
         }
       ]
     },
     {
-      name: 'Beltrano de Tal',
+      name: 'Romualdo da Silva',
       cpf: '23165478311',
-      cpfIsRegularized: true,
+      cpfIsRegularized: false,
       accounts: [
         {
-          accountNumber: '654465',
-          title: 'Conta aplicação',
-          subTitle: 'Cooperativa Viacredi'
-        },
-        {
-          accountNumber: '885432',
+          accountNumber: '654465-0',
           title: 'Conta aplicação',
           subTitle: 'Cooperativa Viacredi'
         }
