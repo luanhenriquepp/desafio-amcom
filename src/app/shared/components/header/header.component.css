@@ -10,10 +10,10 @@ mat-toolbar .page-infos {
   margin: 10px 10px;
 }
 mat-toolbar .page-infos .name {
-  font-size: 24px;
+  font-size: 22px;
 }
 mat-toolbar .page-infos .description {
-  font-size: 16px;
+  font-size: 14px;
   color: #dddddd;
 }
 
