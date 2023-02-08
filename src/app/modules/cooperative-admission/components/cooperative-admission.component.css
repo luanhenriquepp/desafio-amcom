@@ -91,5 +91,10 @@ mat-stepper .observation .disclaimer {
 ::ng-deep .mat-form-field-label {
   transform: translateY(-20px) !important;
 }
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+  border-color: var(--primary-color) !important;
+}
 
 /*# sourceMappingURL=cooperative-admission.component.css.map */
