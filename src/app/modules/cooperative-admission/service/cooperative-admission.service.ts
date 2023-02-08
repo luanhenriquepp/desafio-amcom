@@ -27,6 +27,23 @@ export class CooperativeAdmissionService {
       ]
     },
     {
+      name: 'Astolfo Júnior da Silva',
+      cpf: '78945631296',
+      cpfIsRegularized: true,
+      accounts: [
+        {
+          accountNumber: '123132-x',
+          title: 'Conta aplicação',
+          subTitle: 'Cooperativa Viacredi'
+        },
+        {
+          accountNumber: '89745-2',
+          title: 'Conta corrente',
+          subTitle: 'Cooperativa Viacredi'
+        }
+      ]
+    },
+    {
       name: 'Romualdo da Silva',
       cpf: '23165478311',
       cpfIsRegularized: false,
